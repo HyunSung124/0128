@@ -1,0 +1,75 @@
+#햄버거 만들기
+# def solution(ingredient):
+#     ma = []
+#     buger = 0
+#     for i in ingredient:
+#         ma.append(i)
+#         if (len(ma)) == 4:
+#             ma[-4:] == 1, 2, 3, 1
+#
+#
+#
+# ingredient = [2, 1, 1, 2, 3, 1, 2, 3, 1]
+# print(solution(ingredient))
+
+
+#다른방법
+# def solution(ingredient):
+#     ma = []
+#     bu = 0
+#     for i in ingredient:
+#         ma.append(i)
+#         if len(ma) >= 4 and ma[-4:] == [1,2,3,1]:
+#             del ma[-4:]
+#             bu += 1
+#     return bu
+
+
+
+
+
+
+
+#문자열 나누기
+# def solution(s):
+#     cnt = 0
+#     x = 0
+#     while s:
+#         sa = 0
+#         di = 0
+#         for i in range(len(s)):
+#             if s[i] == s[x]:
+#                 sa += 1
+#             else:
+#                 di += 1
+#             if sa == di:
+#                 cnt += 1
+#                 sa = di = 0
+#                 s = s[i+1:]
+#                 break
+#             if i == len(s) - 1:
+#                 s = ""
+#                 cnt += 1
+#     return cnt
+# s1 = 'banana'
+
+
+
+
+#크레인 인형뽑기 게임
+def solution(board,moves):
+    x = 0
+    y = 0
+    b = []
+    for i in range(len(moves)):
+           if moves[i]:
+               b.appned(moves[i])
+
+    cnt = 0
+    return cnt
+board = [[0,0,0,0,0],
+         [0,0,1,0,3],
+         [0,2,5,0,1],
+         [4,2,4,4,2],
+         [3,5,1,3,1]]
+moves = [1,5,3,5,1,2,1,4]
